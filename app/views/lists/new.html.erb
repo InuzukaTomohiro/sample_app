@@ -1,0 +1,9 @@
+<h1>新規登録</h1>
+
+<%= form_with model: @list do |f| %>
+  <div><%= f.label :title, "タイトル" %></div>
+  <div><%= f.text_field :title %></div>
+  <div><%= f.label :body, "本文" %></div>
+  <div><%= f.text_area :body %></div>
+  <div><%= f.submit "新規投稿" %></div>
+<% end %>

@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <tr>
+      <th>タイトル</th>
+      <th>本文</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @lists.each do |list| %>
+      <tr>
+        <td><%= list.title %></td>
+        <td><%= list.body %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to "トップ画面", root_path %>
